@@ -13,7 +13,7 @@ use Mix.Config
 # which you typically run after static files are built.
 config :peepchat, Peepchat.Endpoint,
   http: [port: {:system, "PORT"}],
-  force_ssl: [rewrite_on:[:x_forwarded_proto]],
+  force_ssl: [rewrite_on: [:x_forwarded_proto]],
   url: [host: "quiet-reaches-45347.herokuapp.com", port: 443],
   secret_key_base: System.get_env("SECRET_KEY_BASE"),
   cache_static_manifest: "priv/static/manifest.json"
