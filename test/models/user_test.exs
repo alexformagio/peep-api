@@ -3,7 +3,7 @@ defmodule Peepchat.UserTest do
 
   alias Peepchat.User
 
-  @valid_attrs %{email: "alex@example.com",
+  @valid_attrs %{email: "alex@arlemcar.com",
                  password: "abcde123456",
                  password_confirmation: "abcde123456"}
   @invalid_attrs %{}
