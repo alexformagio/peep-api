@@ -37,6 +37,7 @@ defmodule Peepchat.Mixfile do
      {:gettext, "~> 0.11"},
      {:cowboy, "~> 1.0"},
      {:poison, "~> 1.5", [hex: :poison, override: true]},
+     {:ecto, "~> 2.0", [hex: :ecto, override: true]},     
      {:cors_plug, "~> 1.1"},
      {:guardian, "~> 0.10.0"},
      {:comeonin, "~> 2.4"},
