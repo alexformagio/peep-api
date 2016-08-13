@@ -8,11 +8,11 @@ defmodule Peepchat.RegistrationController do
       "password" => password,
       "password-confirmation" => password_confirmation}}}
 ) do
-    changeset = User.changeset %User{}, %{email: email,
+    changeset = User.changeset(%User{}, %{email: email,
       password_confirmation: password_confirmation,
-      password: password}
-    
-    case Repo.insert changeset do
+      password: password})
+
+    case Repo.insert(changeset) do
       {:ok, user} ->
         conn
         |> put_status(:created)

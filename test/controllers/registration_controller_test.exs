@@ -8,7 +8,7 @@ defmodule Peepchat.RegistrationControllerTest do
     "password" => "fqhi12hrrfasf",
     "password-confirmation" => "fqhi12hrrfasf"
   }
-  
+
   @invalid_attrs %{}
 
   setup %{conn: conn} do
@@ -25,9 +25,9 @@ defmodule Peepchat.RegistrationControllerTest do
 
   test "does not create resource and renders errors when data is invalid", %{conn: conn} do
     assert_error_sent 400, fn ->
-      conn = post conn, registration_path(conn, :create),  %{data: %{type: "user",
+       post(conn, registration_path(conn, :create),  %{data: %{type: "users",
         attributes: @invalid_attrs
-      }}
+      }})
     end
   end
 
