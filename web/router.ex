@@ -13,10 +13,10 @@ defmodule Peepchat.Router do
 
   scope "/api", Peepchat do
     pipe_through :api
-    
-    post "register", RegistrationController, :create
+
+    post "/register", RegistrationController, :create
     #resources "session", SessionController, only: [:index]
-    post "token", SessionController, :create, as: :login
+    post "/token", SessionController, :create, as: :login
   end
 
   scope "/api", Peepchat do

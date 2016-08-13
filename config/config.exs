@@ -25,8 +25,8 @@ config :logger, :console,
 config :phoenix, :format_encoders,
   "json-api": Poison
 
-config :plug, :mimes, 
-  %{"application/vnd.api+json" => ["json-api"]}
+#config :plug, :mimes, %{"application/vnd.api+json" => ["json-api"]}
+config :mime, :types, %{"application/vnd.api+json" => ["json-api"]}
 
 config :guardian, Guardian,
   allowed_algos: ["HS512"], # optional
