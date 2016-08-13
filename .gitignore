@@ -1,6 +1,7 @@
 # App artifacts
 /_build
 /db
+/curls
 /deps
 /*.ez
 .idea/
